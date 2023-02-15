@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Study group</title>
+	<link rel="stylesheet" href="./css/style.css">
+	 <script src="./javascript/body.js"></script>
+</head>
+<header> <!--шапка,меню-->
+    <div class="block_1">
+        <ul id="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="./html/about.html">About</a></li> <!--О нас-->
+            <li><a href="./html/contact.html">Contact</a></li> <!--Контакты-->
+          </ul>
+    </div> 
+</header> <!--конец шапки,меню-->
+<div id="theme"> <!--переключение темы-->
+	<label class="checkbox style-e">
+  <input type="checkbox" onchange="changeTheme(this.checked)" id="typ" onclick="Go()"/>
+  <div class="checkbox__checkmark"></div>
+  <div class="checkbox__body"></div>
+</label>
+</div>
+<p id="textheme">On/Off dark theme</p>
+<img src="./image/logo2.png" id="scr" /><br /> <!--конец переключения темы-->
+<body> <!--content-->
+	<div>
+		<p id="text1">Hi! I'm Tom. I am a third-year student and studying to be a web developer</p>
+	</div>
+	<div>
+		<img src="./image/lang2.png" id="img">
+	</div>
+	<div>
+		<p id="text1">Being a web developer is not only writing where, like some kind of programmer, but also being a designer. You need to be able to choose colors that are combined, the ability to make a beautiful design and logo "with your own hands".</p>
+		<p id="text1"><b>The main "disadvantages" of the profession include:</b><br>
+		– the work of web programmers is sedentary, their work is fraught with pain in the back, wrists, lower back, posture may deteriorate. Vision problems may occur;<br>
+		– in the process of work, programmers interact with all team members, they do not always manage to reach a compromise. There may be difficulties with the customer, who is often far away and unable to clearly express his desires;<br>
+		– irregular working hours. If it is urgently necessary to finalize the project, the programmer can spend days working on the code;<br>
+		– representatives of this profession need to constantly adapt to certain new trends in information technology, engage in self-education.</p>
+		<img src="./image/img1.jpg" id="img2">
+		<p id="text1"><b>Obvious advantages of the profession:</b><br>
+		– the demand for web programmers in the labor market. Every self-respecting firm or company has its own website that needs to be managed;<br>
+		– a web programmer has a high salary. As a rule, very significant salaries, sometimes even exceeding the earnings of the director of their company;<br>
+		– self-study opportunities. Web programmers do not need official diplomas. Knowledge is important, and the necessary knowledge can be found on the Internet.</p>
+		<img src="./image/img2.jpg" id="img2">
+	</div>
+</body> <!--конец content-->
+<footer id="footer"> <!--подвал-->
+	<div id="block">
+    <a href="index.html"><img src="./image/foot2.png" id="#logo"></a>
+	</div>
+    <p id="text0"><a href="index.html" id="logo2">Home</a><br><a href="./html/about.html">About</a><br><a href="./html/contact.html">Contact</a></p>
+    <p id="text3">(c) Made by Portfolio Template & powered by Flowbase</p>
+</footer> <!--конец подвала-->
+<div id="preloader_malc"> <!--загрузка-->
+ <img src="./image/sheeps.gif" id="giff">
+</div> <!--конец загрузки-->
+</html>

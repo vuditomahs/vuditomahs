@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>About</title>
+	<link rel="stylesheet" href="../css/style.css">
+	 <script src="../javascript/content.js"></script>
+</head>
+<header> <!--шапка,меню-->
+    <div class="block_1">
+        <ul id="navbar">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../html/about.html">About</a></li> <!--О нас-->
+            <li><a href="../html/contact.html">Contact</a></li> <!--Контакты-->
+          </ul>
+    </div> 
+</header> <!--конец шапки,меню-->
+<div id="theme"> <!--переключение темы-->
+	<label class="checkbox style-e">
+  <input type="checkbox" onchange="changeTheme(this.checked)" id="typ" onclick="Go()"/>
+  <div class="checkbox__checkmark"></div>
+  <div class="checkbox__body"></div>
+</label>
+</div>
+<p id="textheme">On/Off dark theme</p>
+<img src="../image/logo2.png" id="scr" /><br /> <!--конец переключения темы-->
+<body> <!--content-->
+	<div>
+	<p id="text1">There is not much to say in this section, but I will say it anyway. Our group is called IS-302, where the people in this group can be said to be divided into "gangs".</p>
+	</div>
+	<div>
+		<img src="../image/img3.jpg" id="img2">
+	</div>
+		<a href="#modal-one" class="btn-modal">Посмотреть список группы</a>
+    <!-- Модальное окно -->
+<div class="modal" id="modal-one" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-header">
+            ИС-302
+            <a href="#close" class="btn-close" aria-hidden="true">×</a>
+        </div>
+        <div class="modal-body"> <!--содержимое-->
+        	 <ol id="myList">
+			</ol>
+			<button id="myButton">Открыть</button>
+  <a href="../index.html"><input type="submit" name="Ок" value="Закрыть" id="buton3"></a>
+</div>
+        </div>
+    </div>
+	<p id="text1">And yes. Of course, we study not in the palace, but in a good college SUMK.</p>
+	<img src="../image/img4.jpg" id="img2">
+</body> <!--конец content-->
+<footer id="footer"> <!--подвал-->
+	<div id="block">
+    <a href="../html/about.html"><img src="../image/foot2.png" id="#logo"></a>
+	</div>
+    <p id="text0"><a href="../index.html" id="logo2">Home</a><br><a href="../html/about.html">About</a><br><a href="../html/contact.html">Contact</a></p>
+    <p id="text3">(c) Made by Portfolio Template & powered by Flowbase</p>
+</footer> <!--конец подвала-->
+<div id="preloader_malc"> <!--загрузка-->
+ <img src="../image/sheeps.gif" id="giff">
+</div> <!--конец загрузки-->
+</html>

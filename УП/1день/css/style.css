@@ -1,0 +1,115 @@
+#navbar { /*шапка,меню*/
+margin: 0;
+        padding: 0; /*отступы*/
+        list-style-type: none;
+        border: 2px solid #32CD32;
+        border-radius: 20px 5px; /*округление*/
+        width: 100%; /*ширина*/
+        height: 30px; /*высота*/
+        text-align: center; /*расположение текста*/
+        background-color: #32CD32; /*фон*/
+      }
+      #navbar li { display: inline; }
+      #navbar a {
+        color: #fff;
+        padding: 5px 10px;
+        text-decoration: none;
+        font-weight: bold;
+        display: inline-block;
+        width: 100px;
+      }
+      #navbar a:hover {
+        border-radius: 20px 5px;
+        background-color: #ff0000;
+      } /*конец шапки*/
+      #img1 {
+        width: 1200px;
+        height: 500px;
+        border-radius: 20px 10px;
+        padding: 10px; /*отступ от всего*/
+      }
+      #img2 {
+        margin-top: 50px;
+        display: block; /*картинка по центру*/
+        margin: 10px auto 20px;
+      }
+      #text1 {
+        text-align: center;
+        font-size: 35px;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        color: white;
+      }
+      .menu{
+        background: black;
+        padding: 2px;
+        border-radius: 20px 5px;
+      }
+      #text2 {
+        color: black;
+        font-size: 35px;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: left;
+        border-bottom:5px solid #00ff0d;
+        width: 400px;
+      }
+      #text3 {
+        font-size: 30px;
+        text-decoration: none;
+        color: #00ff0d;
+      }
+      #text3 a {
+        text-decoration: none;
+        color: #ff0000;
+      }
+      .menu2{
+        text-align: left;
+      }
+     #text4 {
+        color: black;
+        font-size: 35px;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        border-bottom:5px solid #00ff0d;
+      }
+      #text7 {
+        color: black;
+        font-size: 35px;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        border-bottom:5px solid #00ff0d;
+      }
+      footer {
+        background: #ffff00;
+      }
+      #img3 {
+        margin-left: 50px;
+      }
+      #text00 {
+        color: black;
+        font-size: 25px;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        padding: 5px;
+        margin-top: -150px;
+      }
+      #text00 a {
+        text-decoration: none;
+        color: red;
+      }
+      .button {
+        text-align: center;
+      }
+      .images {
+        width: 300px;
+        height: 100px;
+        font-size: 30px;
+        background: black;
+        color: white;
+      }
+      .register{
+        text-align: center;
+        padding: 10px;
+      }
+      
+     
+

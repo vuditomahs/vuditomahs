@@ -1,0 +1,450 @@
+        body {
+          background: #FFF8DC;
+          cursor: url('../image/cursor.svg'), auto; /*cursor*/
+        }
+        #navbar { /*шапка,меню*/
+        margin: 0;
+        padding: 0; /*отступы*/
+        list-style-type: none;
+        border: 2px solid  #fcb410;
+        border-radius: 50px 50px; /*округление*/
+        width: 100%; /*ширина*/
+        height: 30px; /*высота*/
+        text-align: center; /*расположение текста*/
+        background-color: #fcb410; /*фон оранжевый*/
+        position: fixed;
+        left: 0;
+        top: 0;
+      }
+      #navbar li { display: inline; }
+      #navbar a {
+        color: #fff;
+        padding: 5px 10px;
+        text-decoration: none;
+        font-weight: bold;
+        display: inline-block;
+        width: 100px;
+      }
+      #navbar a:hover {
+        border-radius: 20px 5px;
+        background-color: #bf4acc;
+      } /*конец шапки*/
+      #footer { /*подвал*/
+        background: #bada55;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: auto;
+        margin-top: 50px;
+      } 
+      #text0 {
+        text-align: center;
+        padding: 20px 10px;
+        font-size: 20px;
+        margin-top: -90px;
+        margin-left: 50px;
+      } 
+      #text0 a:hover {
+        border-radius: 20px 5px;
+        background-color: #fcb410;
+      } 
+      #text3 {
+        font-size: 20px;
+        padding: 10px;
+      } /*конец подвала*/
+      a {
+        text-decoration: none;
+        color: #000000;
+      }
+      #text1 { /*content*/
+        font-size: 20px; /*размер шрифта*/
+        font-family: Segoe Script; /*шрифт*/
+      }
+      #img {
+        width: 100%;
+      }
+      #img2 {
+        width: 100%;
+        height: 500px;
+      } /*конец content*/
+      [dark] { /*переключение темы*/
+  --var-bgcolor: #333;
+  --var-fontcolor: #eee;
+}
+body {
+  background-color: var(--var-bgcolor);
+  color: var(--var-fontcolor);
+} 
+#textheme {
+  font-weight: bold;
+  text-align: right;
+  margin-top: -20px;
+} /*конец переключение темы*/
+#scr {
+margin-top: -40px;
+}
+#theme { /*дизайн кнопки переключения темы*/
+  text-align: right;
+  padding: 20px;
+  margin-right: 130px;
+}
+.checkbox.style-e {
+  display: inline-block;
+  position: relative;
+  padding-left: 50px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: url('../image/pointer.svg'), auto;
+}
+.checkbox.style-e input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.checkbox.style-e input:checked ~ .checkbox__checkmark {
+  background-color: #f7cb15;
+}
+.checkbox.style-e input:checked ~ .checkbox__checkmark:after {
+  left: 21px;
+}
+.checkbox.style-e:hover input ~ .checkbox__checkmark {
+  background-color: #bada55;
+}
+.checkbox.style-e:hover input:checked ~ .checkbox__checkmark {
+  background-color: #f7cb15;
+}
+.checkbox.style-e .checkbox__checkmark {
+  position: absolute;
+  top: 1px;
+  left: 0;
+  height: 22px;
+  width: 40px;
+  background-color: #bada55; /*цвет по умолчании в состоянии выкл*/
+  transition: background-color 0.25s ease;
+  border-radius: 11px;
+}
+.checkbox.style-e .checkbox__checkmark:after {
+  content: "";
+  position: absolute;
+  left: 3px;
+  top: 3px;
+  width: 16px;
+  height: 16px;
+  display: block;
+  background-color: #fff;
+  border-radius: 50%;
+  transition: left 0.25s ease;
+}
+.checkbox.style-e .checkbox__body {
+  color: #333;
+  line-height: 1.4;
+  font-size: 16px;
+  transition: color 0.25s ease;
+} /*конец дизайна кнопки переключения темы*/
+::-moz-selection {
+    background-color: #bf4acc;
+    color: #fff;
+}
+::selection {
+    background-color: #bf4acc;
+    color: #fff;
+}
+a:hover {
+  cursor: url('../image/pointer.svg'), auto; /*pointer*/
+}
+#preloader_malc { /*загрузка*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, .6);
+    z-index: 99
+  }
+  #preloader_malc div {
+    background: #fff;
+    width: 260px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 8px;
+    font-family: arial;
+    font-size: 15px;
+    color: #111;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto
+  }
+  #giff {
+  /* задаёт путь до файла */
+  height: 100%;
+  width: 100%;
+} /*конец загрузки*/
+.btn-modal { /*панорамное окно*/
+  background:#ff9500;
+  border:#e08403 solid 1px;
+  border-radius:3px;
+  color:#fff;
+  display:inline-block;
+  padding:8px 15px;
+  text-decoration:none;
+  text-align:center;
+  min-width:60px;
+  position:relative;
+  transition:color .1s ease
+}
+.btn-modal:hover{
+  background:#e08403;
+}
+.modal:before{
+  content:"";
+  display:none;
+  background:rgba(0,0,0,0.7);
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  z-index:10
+}
+.modal:target:before{
+  display:block
+}
+.modal-dialog{
+  background:#fefefe;
+  border:#333 solid 1px;
+  border-radius:5px;
+  margin-left:-180px;
+  position:fixed;
+  left:50%;
+  top:-100%;
+  z-index:11;
+  width:360px;
+  -webkit-transform:translate(0,-500%);
+  -ms-transform:translate(0,-500%);
+  transform:translate(0,-500%);
+  -webkit-transition:-webkit-transform .3s ease-out;
+  -moz-transition:-moz-transform .3s ease-out;
+  -o-transition:-o-transform .3s ease-out;
+  transition:transform .3s ease-out;
+}
+.modal:target .modal-dialog{
+  -webkit-transform:translate(0,0);
+  -ms-transform:translate(0,0);
+  transform:translate(0,0);
+  top:25%;
+}
+.modal-body{
+  padding:20px;
+}
+.modal-header,.modal-footer{
+  padding:10px 20px;
+}
+.modal-header{
+  border-bottom:#eee solid 1px;
+  font-size:20px;
+}
+.btn-close{
+  color:#aaa;
+  font-size:30px;
+  text-decoration:none;
+  position:absolute;
+  right:5px;
+  top:0;
+}
+.btn-close:hover{
+  color:#919191;
+}
+#close{
+  display:none;
+}
+/* CSS для кнопки открытия модального окна */
+.btn-modal{
+  background:#ff9500;
+  border:#e08403 solid 1px;
+  border-radius:3px;
+  color:#fff;
+  display:inline-block;
+  padding:8px 15px;
+  text-decoration:none;
+  text-align:center;
+  min-width:60px;
+  position:relative;
+  transition:color .1s ease;
+}
+.btn-modal:hover{
+  background:#e08403;
+}
+/* CSS для модального окна */
+.modal:before{
+  content:"";
+  display:none;
+  background:rgba(0,0,0,0.7);
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  z-index:10;
+}
+.modal:target:before{
+  display:block;
+}
+.modal-dialog{
+  background:#fefefe;
+  border:#333 solid 1px;
+  border-radius:5px;
+  margin-left:-180px;
+  position:fixed;
+  left:50%;
+  top:-100%;
+  z-index:11;
+  width:360px;
+  -webkit-transform:translate(0,-500%);
+  -ms-transform:translate(0,-500%);
+  transform:translate(0,-500%);
+  -webkit-transition:-webkit-transform .3s ease-out;
+  -moz-transition:-moz-transform .3s ease-out;
+  -o-transition:-o-transform .3s ease-out;
+  transition:transform .3s ease-out;
+}
+.modal:target .modal-dialog{
+  -webkit-transform:translate(0,0);
+  -ms-transform:translate(0,0);
+  transform:translate(0,0);
+  top:25%;
+}
+.modal-body{
+  padding:20px;
+}
+.modal-header,.modal-footer{
+  padding:10px 20px;
+}
+.modal-header{
+  border-bottom:#eee solid 1px;
+  font-size:20px;
+}
+.btn-close{
+  color:#aaa;
+  font-size:30px;
+  text-decoration:none;position:absolute;
+  right:5px;
+  top:0;
+}
+.btn-close:hover{
+  color:#919191;
+}
+/*добавляем, чтобы остановить прокручивание вверх*/
+.star-ratio {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  height: 2em;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+  font-size: 1em;
+}
+
+.ratio {
+  width: 10em;
+  height: 2em;
+  position: relative;
+  background: url(https://i.stack.imgur.com/HYO64.png);
+  background-size: 2em 2em;
+  background-repeat: repeat-x;
+}
+
+.star-ratio:nth-of-type(1) {
+  width: 2em;
+  z-index: 5;
+}
+
+.star-ratio:nth-of-type(2) {
+  width: 4em;
+  z-index: 4;
+}
+
+.star-ratio:nth-of-type(3) {
+  width: 6em;
+  z-index: 3;
+}
+
+.star-ratio:nth-of-type(4) {
+  width: 8em;
+  z-index: 2;
+}
+
+.star-ratio:nth-of-type(5) {
+  width: 10em;
+  z-index: 1;
+}
+
+.star-ratio:checked,
+.star-ratio:hover {
+  background: url(https://i.stack.imgur.com/XV18m.png);
+  background-size: 2em 2em;
+  background-repeat: repeat-x;
+  cursor: url('../image/pointer.svg'), auto; /*pointer для звездочек*/ 
+}
+
+.star-ratio:hover~.star-ratio {
+  background: url(https://i.stack.imgur.com/HYO64.png);
+  background-size: 2em 2em;
+  background-repeat: repeat-x;
+} /*конец панорамного окна*/
+#buton { /*кнопка в панарамном окне*/
+  color:#aaa;
+  font-size:25px;
+  text-decoration:none;
+  position:absolute;
+  right:-170px;
+  top: 10px;
+  cursor: url('../image/pointer.svg'), auto; /*pointer для кнопки отправить*/
+} /*конец кнопки в панарамном окне*/
+#buton2 { /*конпка для списка группы*/
+color:#fff;
+font-size:25px;
+text-decoration:none;
+background:#fcb410;
+cursor: url('../image/pointer.svg'), auto;
+border: 2px solid #fcb410;
+font-weight: bold;
+} /*конец списка группы*/
+#buton3 {
+color:#aaa;
+font-size:20px;
+text-decoration:none;
+right:-170px;
+  top: 10px;
+cursor: url('../image/pointer.svg'), auto;
+}
+#myButton {
+  color:#aaa;
+font-size:20px;
+text-decoration:none;
+right:-170px;
+  top: 10px;
+cursor: url('../image/pointer.svg'), auto;
+}
+ 
+
+
+
+
+
+    
+
+
+
